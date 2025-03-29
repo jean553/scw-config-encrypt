@@ -1,6 +1,6 @@
 # Scaleway CLI config encryption
 
-Simple script to decrypt #[Scaleway CLI](https://github.com/scaleway/scaleway-cli) config file everytime a `scw` command is run.
+Simple script to decrypt [Scaleway CLI](https://github.com/scaleway/scaleway-cli) config file everytime a `scw` command is run.
 It allows to only store an encrypted version of `~/.config/scw/config.yaml` locally.
 On April 2025, Scaleway CLI does not provide any config file encryption option.
 
