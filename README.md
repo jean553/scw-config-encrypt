@@ -20,3 +20,16 @@ default_zone: ...
 Use `openssl enc -pbkdf2 -aes-256-cbc -salt -in ~/.config/scw/config.yaml -out ~/.config/scw/encrypted_config.yaml` to encrypt the plain text file.
 
 Move this script into your home folder and add the alias `alias scw="~/encrypt_decrypt_scw_config.sh" in `.zshrc`.
+
+## Plain text file in `ramfs`
+
+Note that you can store temporarily the plain text file in `ramfs` folder, so that content is never dumped on your hard drive.
+
+Create a `ramfs` volume:
+
+```sh
+sudo mount -t ramfs ramfs /ramfs
+
+# optionnal
+sudo chown your_user:your_group /ramfs
+```
